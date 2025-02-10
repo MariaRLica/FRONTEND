@@ -1,0 +1,78 @@
+<htlm>
+    <head>
+        <title>Calculadora</title>
+        <style>
+            input[type=button] {  
+  width: 60px;  
+  height: 60px;  
+  float: left;  
+  padding: 0;  
+  margin: 5px;  
+  box-sizing: border-box;  
+  background: #2cb619;  
+  border: none;  
+  font-size: 30px;  
+  line-height: 30px;  
+  border-radius: 50%;  
+  font-weight: 700;  
+  color: #5E5858;  
+  cursor: pointer;    
+} 
+input[type=text] {  
+  width: 270px;  
+  height: 60px;  
+  float: left;  
+  padding: 0;  
+  box-sizing: border-box;  
+  border: none;  
+  background: none;  
+  color: red;  
+  text-align: right;  
+  font-weight: 700;  
+  font-size: 60px;  
+  line-height: 60px;  
+  margin: 0 25px;  
+  }  
+        </style>
+    </head>
+    <body>
+         <form name="Calculadora"><table border="2" cellpading ="15" cellspacing="12" bgcolor="#080d01">
+            <tr><td colspan="4"><input type="text" name="input"> </input></td>
+            </tr>
+            <tr><td>
+                <input type="button" name= "mrc" style="font-size: 30px;" value="MRC"> </input></td>
+                <td><input type="button" name="m-" style="font-size: 30px;" value="M-"> </input></td>
+                <td><input type="button" name="m+" style="font-size: 30px;" value="M+"> </input></td>
+                <td><input type="button" name="div" style="font-size: 30px;" value="/"> </input></td>
+            </tr>
+            <tr><td>
+                <input type="button" onclick="Calculadora.input.value +='7'" name="seven" style="font-size: 30px;" value="7"> </input></td>
+                <td><input type="button" onclick="Calculadora.input.value +='8'" name="eight" style="font-size: 30px;" value="8"> </input></td>
+                <td><input type="button" onclick="Calculadora.input.value +='9'" name="nine" style="font-size: 30px;" value="9"> </input></td>
+                <td><input type="button" onclick="Calculadora.input.value +='*'" name="mult" style="font-size: 30px;" value="*"> </input></td>
+            </tr>
+                <tr><td>
+                    <input type="button" onclick="Calculadora.input.value +='4'" name="four" style="font-size: 30px;" value="4"> </input></td>
+                    <td><input type="button" onclick="Calculadora.input.value +='5'" name="five" style="font-size: 30px;" value="5"> </input></td>
+                    <td><input type="button" onclick="Calculadora.input.value +='6'" name="six" style="font-size: 30px;" value="6"> </input></td>
+                    <td><input type="button" onclick="Calculadora.input.value +='-'" name="minus" style="font-size: 30px;" value="-"> </input></td>
+                
+                </tr>
+                <tr><td>
+                    <input type="button" onclick="Calculadora.input.value +='1'" name="one" style="font-size: 30px;" value="1"> </input></td>
+                    <td><input type="button" onclick="Calculadora.input.value +='2'" name="two" style="font-size: 30px;" value="2"> </input></td>
+                    <td><input type="button" onclick="Calculadora.input.value +='3'" name="tree" style="font-size: 30px;" value="3"> </input></td>
+                    <td><input type="button" onclick="Calculadora.input.value +='+'" name="add" style="font-size: 30px;" value="+"> </input></td>
+                
+                </tr>
+                <tr><td>
+                    <input type="button" onclick="Calculadora.input.value +='0'" name="zero" style="font-size: 30px;" value="0"> </input></td>
+                    <td><input type="button" onclick="Calculadora.input.value ='.'" name="dot" style="font-size: 30px;" value="."> </input></td>
+                    <td><input type="button" onclick="Calculadora.input.value =''" name="clear" style="font-size: 30px;" value="C"> </input></td>
+                    <td><input type="button" onclick="Calculadora.input.value =eval(Calculadora.input.value)"name="iqual" style="font-size: 30px;" value="="> </input></td>
+                </tr>
+                
+            
+            </table></form>
+    </body>
+</htlm>
